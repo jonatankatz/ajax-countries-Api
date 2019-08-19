@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ajax Countries Api</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    
-<script src="Jquery.js"></script>
-<script src="index.js"></script>   
+    <div class="jumbotron mb-0">
+        <h1> Countries Api </h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row btnRow">
+            <div class="col ml-4 ">
+                <div class="form-inline md-form mr-auto">
+                    <input id="capitalCityInput" class="form-control mr-sm-2" type="text" placeholder="Search By Capital City" aria-label="Search">
+                    <button type="button" id="capitalSearchBtn" class="btn blue-gradient btn-rounded btn-sm my-0">Search</button>
+                </div>
+            </div>
+            <div class=" col  form-inline ">
+                <div class="md-form  select">
+                    <select id="currSlct">
+                        <option selected disabled>Choose Currency</option>
+                        <option value="eur">&#x20ac;</option>
+                        <option value="usd">&#x24;</option>
+                        <option value="ils">&#x20aa;</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="cardsContainer" class="row mt-4">
+        </div>
+    </div>
+    <script src="Jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
